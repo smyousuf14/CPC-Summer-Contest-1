@@ -13,7 +13,7 @@ int main()
     
     output = m - n;
     
-    if(output == 1)
+    if(output == 1 || output == -1)
     {
         piece = "piece";
     }
@@ -32,6 +32,7 @@ int main()
     {
         // Nothing
     }
+    else
     if(output > 0)
     {
         cout << "Dr. Chaz will have " << output << " " << piece << " of chicken left over!";    
@@ -39,7 +40,7 @@ int main()
     else
     if(output < 0)
     {
-        cout << "Dr. Chaz needs " << -output << " " << piece << " more pieces of chicken!";
+        cout << "Dr. Chaz needs " << -output << " more "  << piece << " of chicken!";
     }
     
 }
