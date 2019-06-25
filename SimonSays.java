@@ -15,7 +15,15 @@ public class Main
 	    
 	    // Set value to the commands
 	    commands = new String[commandNumbers];
+	    for(indexNumber = 0; indexNumber < commandNumbers; indexNumber++)
+	    {
+	        commands[indexNumber] = scan.nextLine();
+	    }
 	    
+	    for(indexNumber = 0; indexNumber < commandNumbers; indexNumber++)
+	    {
+	        System.out.println(commands[indexNumber]);
+	    }
 	    
 	    
 	}
