@@ -9,16 +9,19 @@ public class Main
 		String[] commands;
 		int indexNumber;
 		
-	    Scanner scan = new Scanner(System.in);
+		// Scanner 
+	    Scanner scanInt = new Scanner(System.in);
+	    Scanner scanString = new Scanner(System.in);
 	    
-	    commandNumbers = scan.nextInt();
+	    commandNumbers = scanInt.nextInt();
 	    
 	    // Set value to the commands
 	    commands = new String[commandNumbers];
 	    for(indexNumber = 0; indexNumber < commandNumbers; indexNumber++)
 	    {
-	        commands[indexNumber] = scan.nextLine();
+	        commands[indexNumber] = scanString.nextLine();
 	    }
+	    
 	    
 	    for(indexNumber = 0; indexNumber < commandNumbers; indexNumber++)
 	    {
