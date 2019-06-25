@@ -8,6 +8,7 @@ public class Main
 		int commandNumbers;
 		String[] commands;
 		int indexNumber;
+		String checkCommand;
 		
 		// Scanner 
 	    Scanner scanInt = new Scanner(System.in);
@@ -25,10 +26,17 @@ public class Main
 	    // Check if the first two words is Simon says
 	    for(indexNumber = 0; indexNumber < commandNumbers; indexNumber++)
 	    {
-	        if(commands[indexNumber].subString(0, 10)).equals("Simon says")
+	        if(commands[indexNumber].length() >= 10)
 	        {
-	            
+	            checkCommand = commands[indexNumber].substring(0, 10);
+    	        if(checkCommand.equals("Simon says"))
+    	        {
+    	            // Do what Simon says
+    	            System.out.println(commands[indexNumber].substring(11, commands[indexNumber].length()));
+    	        }
+    	         
 	        }
+	        
 	    }
 	    
 	}
