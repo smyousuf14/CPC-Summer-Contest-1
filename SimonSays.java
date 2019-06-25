@@ -22,12 +22,14 @@ public class Main
 	        commands[indexNumber] = scanString.nextLine();
 	    }
 	    
-	    
+	    // Check if the first two words is Simon says
 	    for(indexNumber = 0; indexNumber < commandNumbers; indexNumber++)
 	    {
-	        System.out.println(commands[indexNumber]);
+	        if(commands[indexNumber].subString(0, 10)).equals("Simon says")
+	        {
+	            
+	        }
 	    }
-	    
 	    
 	}
 }
