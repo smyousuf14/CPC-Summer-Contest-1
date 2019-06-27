@@ -33,7 +33,7 @@ int main()
         // Check the value.
         if(checkValue == "Simon says")
         {
-            cout << commands[indexNumber].substr(11, commands[indexNumber].length());
+            cout << commands[indexNumber].substr(11, commands[indexNumber].length()) << endl;
         }
     }
     
