@@ -28,12 +28,12 @@ int main()
     // Now check each input and perform appropriate action.
     for(indexNumber = 0; indexNumber < numberOfCommands; indexNumber++)
     {
-        checkValue = commands[indexNumber].substr(0, 9);
+        checkValue = commands[indexNumber].substr(0, 10);
         
         // Check the value.
         if(checkValue == "Simon says")
         {
-            cout << commands[indexNumber].substr(10, commands[indexNumber].length());
+            cout << commands[indexNumber].substr(11, commands[indexNumber].length());
         }
     }
     
